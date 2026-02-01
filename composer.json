@@ -1,0 +1,33 @@
+{
+    "name": "nytris/overdrive",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nytris\\Overdrive\\": "src/"
+        },
+        "classmap": ["src/OverdrivePreflight.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nytris\\Overdrive\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "1.6.11",
+        "nytris/ignition": "dev-main",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-mockery": "^1.1",
+        "phpunit/phpunit": "^10.2",
+        "symfony/error-handler": "^6.4"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1"
+        },
+        "sort-packages": true
+    }
+}
